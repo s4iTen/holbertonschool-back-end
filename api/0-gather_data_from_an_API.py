@@ -5,6 +5,8 @@
 import requests
 import sys
 
+"""This is the requests of the api and the usage of it"""
+
 
 employee_id = sys.argv[1]
 
