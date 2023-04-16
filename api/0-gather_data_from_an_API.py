@@ -21,7 +21,7 @@ if __name__ == '__main__':
     todo_list = response.json()
 
     # Count the number of completed tasks
-    completed_tasks = [task for task in todo_list if task["completed"]]
+    completed_tasks = [task for task in todo_list if task["completed"] == 1]
     n_tasks = len(completed_tasks)
 
     # Print the TODO list progress
