@@ -16,7 +16,7 @@ if __name__ == '__main__':
     e_data = response.json()
 
     # Fetch the TODO list for the employee
-    strus = 'https://jsonplaceholder.typicode.com/todos?id='
+    strus = 'https://jsonplaceholder.typicode.com/todos?userId='
     response = requests.get(f"{strus}{employee_id}")
     todo_list = response.json()
 
