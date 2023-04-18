@@ -34,4 +34,4 @@ if __name__ == '__main__':
     d = " is done with tasks("
     print(f"Employee {e_data['name']}{d}{n_tasks}/{tasks}):")
     for task in completed_tasks:
-        print(f"\t{task['title']}")
+        print(f"\t{task['title']}\n")
