@@ -22,7 +22,7 @@ todo_list = response.json()
 
 # Write the data to a CSV file
 filename = f"{id}.csv"
-with open(filename, "w", newline="") as csvfile:
+with open(filename, "w") as csvfile:
     writer = csv.writer(csvfile)
     for t in todo_list:
         writer.writerow([id, e_data['username'], t['completed'], t['title']])
