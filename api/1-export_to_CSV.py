@@ -25,4 +25,4 @@ filename = f"{id}.csv"
 with open(filename, "w") as csvfile:
     writer = csv.writer(csvfile)
     for t in todo_list:
-        writer.writerow([str(id), e_data['username'], str(t['completed']), t['title']])
+        writer.writerow([id, e_data['username'], t['completed'], t['title']])
