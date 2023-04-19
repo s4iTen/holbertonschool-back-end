@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''this is the importation of the modules'''
-import sys
 import json
 import requests
+import sys
 
 if __name__ == ('__main__'):
     """this function export the data as json file"""
