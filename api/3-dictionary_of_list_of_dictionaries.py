@@ -17,9 +17,10 @@ if __name__ == ('__main__'):
     for user in users:
         user_id = user["id"]
         username = user["username"]
+        i = user_id
 
         # Fetch the TODO list for the user
-        url_todos = f"https://jsonplaceholder.typicode.com/todos?userId={user_id}"
+        url_todos = f"https://jsonplaceholder.typicode.com/todos?userId={i}"
         response_todos = requests.get(url_todos)
         todos = response_todos.json()
 
